@@ -3,13 +3,14 @@ Summary(pl):	Wolnodostêpny pakiet CAD oparty o Pythona
 Name:		PythonCAD
 Version:	DS1_R19
 %define	_ver	%(echo %{version} | tr _ -)
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://www.pythoncad.org/releases/%{name}-%{_ver}.tar.bz2
 # Source0-md5:	3bfeb558044591c485fd569961d8b5a8
 URL:		http://www.pythoncad.org/
 BuildRequires:	python-devel
+%pyrequires_eq	python-libs
 Requires:	python-pygtk-gtk >= 1.99.16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
