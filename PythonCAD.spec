@@ -10,7 +10,7 @@ Group:		Applications/Engineering
 Source0:	http://www.pythoncad.org/releases/%{name}-%{_ver}.tar.bz2
 # Source0-md5:	418649c768dd721879905caedcd0dbeb
 URL:		http://www.pythoncad.org/
-BuildRequires:	python
+BuildRequires:	python-devel
 Requires:	python-pygtk-gtk >= 1.99.16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
