@@ -1,13 +1,13 @@
 Summary:	An open-source CAD package built designed around Python
 Summary(pl):	Wolnodostêpny pakiet CAD oparty o Pythona
 Name:		PythonCAD
-Version:	DS1_R5
+Version:	DS1_R16
 %define	_ver	%(echo %{version} | tr _ -)
 Release:	1
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://www.pythoncad.org/releases/%{name}-%{_ver}.tar.bz2
-# Source0-md5:	418649c768dd721879905caedcd0dbeb
+# Source0-md5:	66a832ab278f2068ec5b0d26cb8438a1
 URL:		http://www.pythoncad.org/
 BuildRequires:	python-devel
 Requires:	python-pygtk-gtk >= 1.99.16
@@ -48,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README PKG-INFO NEWS
 %attr(755,root,root) %{_bindir}/*
-%{py_sitedir}/%{name}*
+%{py_sitescriptdir}/%{name}*
