@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 Summary:	An open-source CAD package built designed around Python
 Summary(pl):	Wolnodostêpny pakiet CAD oparty o Pythona
 Name:		PythonCAD
