@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.python
 Summary:	An open-source CAD package built designed around Python
-#Summary(pl):	
+Summary(pl):	Wolnodostêpny pakiet CAD oparty o Pythona
 Name:		PythonCAD
 Version:	DS1_R5
 %define	_ver	%(echo %{version} | tr _ -)
@@ -14,11 +14,16 @@ Requires:	python-pygtk-gtk >= 1.99.16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PythonCAD is an open-source CAD package built designed around Python. As
-such, it aims to be a fully scriptable and customizable CAD program. It
-is initially designed to run under Linux, one of the BSD flavors, or Unix.
+PythonCAD is an open-source CAD package built designed around Python.
+As such, it aims to be a fully scriptable and customizable CAD
+program. It is initially designed to run under Linux, one of the BSD
+flavors, or Unix.
 
-#%description -l pl
+%description -l pl
+PythonCAD jest wolnodostêpnym pakietem CAD zbudowanym w oparciu o
+Pythona. Dlatego ma byæ w pe³ni skryptowalnym i konfigurowalnym
+programem CAD. Pocz±tkowo jest przeznaczony do uruchamiania pod
+Linuksem, jedn± z wersji BSD lub Uniksem.
 
 %prep
 %setup -q -n %{name}-%{_ver}
