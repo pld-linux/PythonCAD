@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://www.pythoncad.org/releases/%{name}-%{_ver}.tar.bz2
+# Source0-md5:	418649c768dd721879905caedcd0dbeb
 URL:		http://www.pythoncad.org/
 BuildRequires:	python
 Requires:	python-pygtk-gtk >= 1.99.16
