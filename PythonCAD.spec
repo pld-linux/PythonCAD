@@ -11,6 +11,7 @@ Source0:	http://www.pythoncad.org/releases/%{name}-%{_ver}.tar.bz2
 URL:		http://www.pythoncad.org/
 BuildRequires:	python-devel
 Requires:	python-pygtk-gtk >= 1.99.16
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
