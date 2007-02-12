@@ -1,6 +1,6 @@
 %define	_ver	%(echo %{version} | tr _ -)
 Summary:	An open-source CAD package built designed around Python
-Summary(pl):	Wolnodostêpny pakiet CAD oparty o Pythona
+Summary(pl.UTF-8):   WolnodostÄ™pny pakiet CAD oparty o Pythona
 Name:		PythonCAD
 Version:	DS1_R28
 Release:	1
@@ -21,10 +21,10 @@ As such, it aims to be a fully scriptable and customizable CAD
 program. It is initially designed to run under Linux, one of the BSD
 flavors, or Unix.
 
-%description -l pl
-PythonCAD jest wolnodostêpnym pakietem CAD zbudowanym w oparciu
-o Pythona. Dlatego ma byæ w pe³ni skryptowalnym i konfigurowalnym
-programem CAD. Jest przeznaczony do uruchamiania pod Linuksem, jedn±
+%description -l pl.UTF-8
+PythonCAD jest wolnodostÄ™pnym pakietem CAD zbudowanym w oparciu
+o Pythona. Dlatego ma byÄ‡ w peÅ‚ni skryptowalnym i konfigurowalnym
+programem CAD. Jest przeznaczony do uruchamiania pod Linuksem, jednÄ…
 z wersji BSD lub Uniksem.
 
 %prep
