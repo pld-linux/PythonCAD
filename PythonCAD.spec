@@ -1,6 +1,6 @@
 %define	_ver	%(echo %{version} | tr _ -)
 Summary:	An open-source CAD package built designed around Python
-Summary(pl.UTF-8):   Wolnodostępny pakiet CAD oparty o Pythona
+Summary(pl.UTF-8):	Wolnodostępny pakiet CAD oparty o Pythona
 Name:		PythonCAD
 Version:	DS1_R28
 Release:	1
