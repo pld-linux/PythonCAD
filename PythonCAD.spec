@@ -41,7 +41,7 @@ echo 'Comment[pl]=Aplikacja typ CAD' >> pythoncad.desktop
 echo '# vi: encoding=utf-8' >> pythoncad.desktop
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -51,9 +51,7 @@ cp pythoncad.desktop $RPM_BUILD_ROOT%{_desktopdir}
 cp prefs.py $RPM_BUILD_ROOT%{_sysconfdir}/%{name}
 cp gtkpycad.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
-python setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 find $RPM_BUILD_ROOT%{py_sitescriptdir} -name "*.py" | xargs rm
 cp gtkpycad.py $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}
