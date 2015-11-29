@@ -9,6 +9,7 @@ Group:		Applications/Engineering
 Source0:	http://www.pythoncad.org/releases/%{name}-%{_ver}.tar.bz2
 # Source0-md5:	2c310626518b875d998ce2fd391d79bb
 URL:		http://www.pythoncad.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel >= 2.3
 %pyrequires_eq	python-libs
 Requires:	python-pygtk-gtk >= 2.6.4
